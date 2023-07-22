@@ -1,4 +1,4 @@
-import { FaFacebookF, FaGoogle } from "react-icons/fa";
+import { FaGithub, FaGoogle } from "react-icons/fa";
 
 const SocialLogin = () => {
   return (
@@ -27,10 +27,10 @@ const SocialLogin = () => {
             //   onClick={handleGoogleLogin}
             className="btn mb-2 text-color-four hover:bg-color-four hover:text-white btn-sm btn-circle btn-outline"
           >
-            <FaFacebookF></FaFacebookF>
+            <FaGithub></FaGithub>
           </button>{" "}
           <span className=" text-lg text-color-one font-semibold mb-2">
-            ACEBOOK
+            ITHUB
           </span>
         </div>
      </div>

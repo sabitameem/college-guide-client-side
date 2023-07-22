@@ -4,9 +4,9 @@
 
 
 .button-lg{
-    @apply  bg-blue text-gold pt-3 pb-3 pl-36 pr-36 rounded-lg hover:bg-gold  hover:text-blue shadow-md
+    @apply  bg-blue text-gold pt-3 pb-3 pl-36 pr-36 rounded-lg hover:bg-gold  hover:text-blue shadow-md hover:border-blue border-b-2
 }
 
 .button-sm{
-    @apply  bg-blue text-gold pt-2 pb-2 pl-3 pr-3 rounded-lg hover:bg-gold shadow-md  hover:text-blue text-xs
+    @apply  bg-blue text-gold pt-2 pb-2 pl-3 pr-3 rounded-lg hover:bg-gold shadow-md  hover:text-blue text-xs hover:border-blue border-b-2
 }
