@@ -1,8 +1,17 @@
 import { Link } from "react-router-dom";
-import logo from "../../../public/icons8-school-64.png";
+import logo from "/icons8-school-64.png";
+import { useContext } from "react";
+import { AuthContext } from "../../providers/AuthProvider";
 
 const Navbar = () => {
-  const user = false;
+  const { user, logOut } = useContext(AuthContext)
+  const handleLogOut = () => {
+    logOut()
+      .then(() => {})
+      .catch((error) => {
+        console.log(error);
+      });
+  };
   return (
     <div className="navbar bg-blue text-gold ">
       <div className="flex-1">
@@ -46,7 +55,7 @@ const Navbar = () => {
               <br></br>
               <Link className="font-semibold mr-4" to="/">My College</Link>
                 <br />
-                <button className="btn btn-sm button-sm border-none mt-4">
+                <button onClick={handleLogOut} className="btn btn-sm button-sm border-none mt-4">
                   Log Out
                 </button>
               </div>
@@ -67,12 +76,12 @@ const Navbar = () => {
               <Link className="font-semibold mr-4" to="/">
                 User Name
               </Link>
-              <button className="btn btn-sm button-sm border-none">Log Out</button>
+              <button onClick={handleLogOut} className="btn btn-sm button-sm border-none">Log Out</button>
             </div>
             <div className="dropdown dropdown-end flex">
               <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                 <div className="w-15 rounded-full btn btn-ghost btn-circle avatar border-2 border-rose-50">
-                  <img src="" />
+                  <img src={user.photoURL} />
                 </div>
               </label>
             </div>
