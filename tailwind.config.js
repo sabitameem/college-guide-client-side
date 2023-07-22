@@ -9,6 +9,8 @@ export default {
       colors: {
         // Add a custom color with the name 'white'
         'white': '#ffffff',
+        'gold': "#DAA520",
+        'blue': '#0A2463'
       },
     },
   },

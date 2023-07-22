@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.button-lg{
+    @apply  bg-blue text-gold pt-3 pb-3 pl-36 pr-36 rounded-lg hover:bg-gold  hover:text-blue shadow-md
+}
+
+.button-sm{
+    @apply  bg-blue text-gold pt-2 pb-2 pl-3 pr-3 rounded-lg hover:bg-gold shadow-md  hover:text-blue text-xs
+}
