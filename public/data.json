@@ -1,0 +1,200 @@
+ [
+      {
+        "college_name": "Harvard University",
+        "college_image": "https://example.com/harvard_image.jpg",
+        "graduation_image": "https://example.com/harvard_graduation.jpg",
+        "admission_date": "September 15, 2023",
+        "admission_process": "Admissions at Harvard are highly competitive and based on academic excellence, extracurricular achievements, and recommendation letters.",
+        "research_history": "Harvard University has a long and prestigious research history, being involved in groundbreaking studies across various disciplines.",
+        "research_work": "Some notable research works include advancements in artificial intelligence, biomedical sciences, and environmental studies.",
+        "event_details": "Harvard hosts numerous academic conferences, seminars, and cultural events throughout the year, attracting speakers and attendees from around the world.",
+        "sports_category": [
+          {
+            "sport_name": "Rowing",
+            "description": "Harvard boasts a renowned rowing team, participating in Ivy League competitions and national championships.",
+            "achievements": "The rowing team has secured several victories in prestigious regattas."
+          },
+          {
+            "sport_name": "Basketball",
+            "description": "Harvard's basketball team competes in Division I of the NCAA and has a strong record in the Ivy League.",
+            "achievements": "The basketball team has qualified for the NCAA tournament multiple times."
+          },
+          {
+            "sport_name": "Soccer",
+            "description": "Harvard's soccer team competes at a high level, and their matches draw enthusiastic crowds on campus.",
+            "achievements": "The soccer team has won several Ivy League titles."
+          }
+        ],
+        "rating": 4.9
+      },
+      {
+        "college_name": "Stanford University",
+        "college_image": "https://example.com/stanford_image.jpg",
+        "graduation_image": "https://example.com/stanford_graduation.jpg",
+        "admission_date": "October 1, 2023",
+        "admission_process": "Stanford's admission process considers academic achievements, extracurricular involvement, standardized test scores, and essays.",
+        "research_history": "Stanford University has a rich research history, known for its contributions to technology, medicine, and social sciences.",
+        "research_work": "Some groundbreaking research includes developments in computer science, renewable energy, and cancer treatment.",
+        "event_details": "Stanford hosts innovation and entrepreneurship events, arts performances, and TED-style talks, fostering a dynamic campus community.",
+        "sports_category": [
+          {
+            "sport_name": "Swimming",
+            "description": "Stanford's swimming team is dominant in NCAA competitions and has produced Olympic medalists.",
+            "achievements": "The swimming team has won multiple national championships."
+          },
+          {
+            "sport_name": "Track and Field",
+            "description": "Stanford's track and field team excels in various events and regularly competes at the highest level.",
+            "achievements": "The track and field team has produced numerous All-Americans."
+          },
+          {
+            "sport_name": "Volleyball",
+            "description": "Stanford's volleyball team is a top contender in the NCAA, with a strong record in the Pac-12 conference.",
+            "achievements": "The volleyball team has won multiple NCAA championships."
+          }
+        ],
+        "rating": 4.8
+      },
+      {
+        "college_name": "Massachusetts Institute of Technology (MIT)",
+        "college_image": "https://example.com/mit_image.jpg",
+        "graduation_image": "https://example.com/mit_graduation.jpg",
+        "admission_date": "October 15, 2023",
+        "admission_process": "MIT looks for students with exceptional academic records, passion for learning, and a strong aptitude for math and science.",
+        "research_history": "MIT has a pioneering research history, leading in fields such as engineering, computer science, and robotics.",
+        "research_work": "Notable research includes advancements in artificial intelligence, nanotechnology, and aerospace engineering.",
+        "event_details": "MIT organizes hackathons, tech conferences, and artistic performances, celebrating innovation and creativity.",
+        "sports_category": [
+          {
+            "sport_name": "Robotics",
+            "description": "MIT's robotics team is renowned for participating in international competitions and developing cutting-edge robots.",
+            "achievements": "The robotics team has won several prestigious robotics challenges."
+          },
+          {
+            "sport_name": "Cross Country",
+            "description": "MIT's cross country team excels in long-distance running and competes in NCAA Division III.",
+            "achievements": "The cross country team has won several regional championships."
+          },
+          {
+            "sport_name": "Fencing",
+            "description": "MIT's fencing team is highly skilled and competes in the NCAA fencing championship.",
+            "achievements": "The fencing team has earned numerous individual and team accolades."
+          }
+        ],
+        "rating": 4.7
+      },
+      {
+        "college_name": "Yale University",
+        "college_image": "https://example.com/yale_image.jpg",
+        "graduation_image": "https://example.com/yale_graduation.jpg",
+        "admission_date": "September 30, 2023",
+        "admission_process": "Yale's admission process emphasizes academic achievements, extracurricular involvement, essays, and teacher recommendations.",
+        "research_history": "Yale University has a storied research history, contributing significantly to literature, humanities, and social sciences.",
+        "research_work": "Some notable research includes studies on global health, cultural anthropology, and economics.",
+        "event_details": "Yale hosts renowned lectures, art exhibitions, and cultural festivals, enriching the intellectual and artistic community.",
+        "sports_category": [
+          {
+            "sport_name": "Sailing",
+            "description": "Yale's sailing team competes at a high level, participating in national championships and regattas.",
+            "achievements": "The sailing team has won numerous national titles."
+          },
+          {
+            "sport_name": "Ice Hockey",
+            "description": "Yale's ice hockey team competes in Division I of the NCAA and has a passionate fan base.",
+            "achievements": "The ice hockey team has won several Ivy League championships."
+          },
+          {
+            "sport_name": "Fencing",
+            "description": "Yale's fencing team excels in epee, foil, and saber, representing the university in NCAA competitions.",
+            "achievements": "The fencing team has produced Olympic-caliber fencers."
+          }
+        ],
+        "rating": 4.6
+      },
+      {
+        "college_name": "California Institute of Technology (Caltech)",
+        "college_image": "https://example.com/caltech_image.jpg",
+        "graduation_image": "https://example.com/caltech_graduation.jpg",
+        "admission_date": "October 5, 2023",
+        "admission_process": "Caltech seeks students with exceptional aptitude in science and engineering and evaluates applications holistically.",
+        "research_history": "Caltech has a strong research history, particularly in physics, astronomy, and earth sciences.",
+        "research_work": "Notable research includes discoveries in astrophysics, gravitational waves, and geophysics.",
+        "event_details": "Caltech hosts scientific symposiums, stargazing nights, and artistic showcases, celebrating curiosity and innovation.",
+        "sports_category": [
+          {
+            "sport_name": "Lacrosse",
+            "description": "Caltech's lacrosse team competes in NCAA Division III and has shown continuous improvement.",
+            "achievements": "The lacrosse team has won several matches against rival institutions."
+          },
+          {
+            "sport_name": "Water Polo",
+            "description": "Caltech's water polo team competes at a high level and participates in conference championships.",
+            "achievements": "The water polo team has secured top positions in regional competitions."
+          },
+          {
+            "sport_name": "Tennis",
+            "description": "Caltech's tennis team is skilled and has a competitive record in the NCAA Division III.",
+            "achievements": "The tennis team has won several conference championships."
+          }
+        ],
+        "rating": 4.5
+      },
+      {
+        "college_name": "Princeton University",
+        "college_image": "https://example.com/princeton_image.jpg",
+        "graduation_image": "https://example.com/princeton_graduation.jpg",
+        "admission_date": "September 25, 2023",
+        "admission_process": "Princeton's admission process considers academic achievements, extracurricular activities, essays, and teacher recommendations.",
+        "research_history": "Princeton University has a distinguished research history, contributing significantly to social sciences, engineering, and humanities.",
+        "research_work": "Notable research includes studies on public policy, renewable energy, and artificial intelligence.",
+        "event_details": "Princeton hosts academic symposiums, arts festivals, and speaker series, fostering a vibrant intellectual community.",
+        "sports_category": [
+          {
+            "sport_name": "Rowing",
+            "description": "Princeton's rowing team competes at a high level, participating in Ivy League and national regattas.",
+            "achievements": "The rowing team has earned multiple Ivy League titles."
+          },
+          {
+            "sport_name": "Squash",
+            "description": "Princeton's squash team is skilled and competes against top-ranked opponents in the collegiate circuit.",
+            "achievements": "The squash team has won several national championships."
+          },
+          {
+            "sport_name": "Field Hockey",
+            "description": "Princeton's field hockey team is competitive in the NCAA Division I, with a strong record in the Ivy League.",
+            "achievements": "The field hockey team has won numerous conference championships."
+          }
+        ],
+        "rating": 4.8
+      },
+      {
+        "college_name": "Oxford University",
+        "college_image": "https://example.com/oxford_image.jpg",
+        "graduation_image": "https://example.com/oxford_graduation.jpg",
+        "admission_date": "October 10, 2023",
+        "admission_process": "Admission to Oxford is highly competitive and varies by course. It involves interviews, aptitude tests, and academic records.",
+        "research_history": "Oxford University has a prestigious research history, contributing significantly to humanities, natural sciences, and medicine.",
+        "research_work": "Notable research includes advancements in literature, particle physics, and medical innovations.",
+        "event_details": "Oxford hosts academic debates, literary festivals, and music concerts, showcasing its diverse cultural heritage.",
+        "sports_category": [
+          {
+            "sport_name": "Rugby",
+            "description": "Oxford's rugby team competes against Cambridge in the annual Varsity Match, a historic sporting event.",
+            "achievements": "The rugby team has secured victories in numerous Varsity Matches."
+          },
+          {
+            "sport_name": "Cricket",
+            "description": "Cricket is deeply rooted in Oxford's traditions, and the college teams play against other prestigious institutions.",
+            "achievements": "The cricket team has won prestigious intercollegiate tournaments."
+          },
+          {
+            "sport_name": "Rowing",
+            "description": "Oxford's rowing team competes in the famous Oxford-Cambridge Boat Race, a celebrated annual event.",
+            "achievements": "The rowing team has secured several victories in the Boat Race."
+          }
+        ],
+        "rating": 4.7
+      }
+    ]
+  
+  

@@ -5,6 +5,7 @@ import { AuthContext } from "../../providers/AuthProvider";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext)
+  console.log(user)
   const handleLogOut = () => {
     logOut()
       .then(() => {})
@@ -49,11 +50,15 @@ const Navbar = () => {
 
             {user && (
               <div className="">
-                <Link className="font-semibold mr-4" to="/">Colleges</Link>
+                <Link className="font-semibold mr-4" to="/colleges">Colleges</Link>
                 <br></br>
-              <Link className="font-semibold mr-4" to="/">Admission</Link>
+              <Link className="font-semibold mr-4" to="/admission">Admission</Link>
               <br></br>
-              <Link className="font-semibold mr-4" to="/">My College</Link>
+              <Link className="font-semibold mr-4" to="/myCollege">My College</Link>
+              <br />
+              <Link className="font-semibold text-xs mr-4" to="/userProfile">
+                {user.displayName}
+              </Link>
                 <br />
                 <button onClick={handleLogOut} className="btn btn-sm button-sm border-none mt-4">
                   Log Out
@@ -68,13 +73,13 @@ const Navbar = () => {
               <Link className="font-semibold mr-4" to="/">
                 Home
               </Link>
-              <Link className="font-semibold mr-4" to="/">Colleges</Link>
-              <Link className="font-semibold mr-4" to="/">Admission</Link>
-              <Link className="font-semibold mr-4" to="/">My College</Link>
+              <Link className="font-semibold mr-4" to="/colleges">Colleges</Link>
+              <Link className="font-semibold mr-4" to="/admission">Admission</Link>
+              <Link className="font-semibold mr-4" to="/myCollege">My College</Link>
               
 
-              <Link className="font-semibold mr-4" to="/">
-                User Name
+              <Link className="font-semibold mr-4" to="/userProfile">
+                {user.displayName}
               </Link>
               <button onClick={handleLogOut} className="btn btn-sm button-sm border-none">Log Out</button>
             </div>
