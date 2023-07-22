@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import logo from "../../../public/icons8-school-64.png";
 
 const Navbar = () => {
-  const user = true;
+  const user = false;
   return (
-    <div className="navbar bg-blue text-gold">
+    <div className="navbar bg-blue text-gold ">
       <div className="flex-1">
         <Link to="/">
           <img className="w-12 lg:w-20 lg:h-20 h-12" src={logo} alt="" />
