@@ -45,15 +45,15 @@ const Navbar = () => {
             tabIndex={0}
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-blue rounded-box w-52"
           >
+            {/* icon mobile screen */}
             <Link className='font-semibold' to="/">Home</Link>
+            <Link className="font-semibold mr-4" to="/colleges">Colleges</Link>
+            <Link className="font-semibold mr-4" to="/admission">Admission</Link>
+            
            
 
             {user && (
               <div className="">
-                <Link className="font-semibold mr-4" to="/colleges">Colleges</Link>
-                <br></br>
-              <Link className="font-semibold mr-4" to="/admission">Admission</Link>
-              <br></br>
               <Link className="font-semibold mr-4" to="/myCollege">My College</Link>
               <br />
               <Link className="font-semibold text-xs mr-4" to="/userProfile">
@@ -69,6 +69,7 @@ const Navbar = () => {
         </div>
         {user ? (
           <>
+          {/* user available in big screen */}
             <div className="dropdown dropdown-end  md:block hidden text-lg mr-3">
               <Link className="font-semibold mr-4" to="/">
                 Home
@@ -76,8 +77,6 @@ const Navbar = () => {
               <Link className="font-semibold mr-4" to="/colleges">Colleges</Link>
               <Link className="font-semibold mr-4" to="/admission">Admission</Link>
               <Link className="font-semibold mr-4" to="/myCollege">My College</Link>
-              
-
               <Link className="font-semibold mr-4" to="/userProfile">
                 {user.displayName}
               </Link>
@@ -93,9 +92,12 @@ const Navbar = () => {
           </>
         ) : (
           <>
+          {/* not user */}
             <Link className="font-semibold hidden lg:inline mr-4" to="/">
               Home
             </Link>
+            <Link className="font-semibold mr-4 hidden lg:block" to="/colleges">Colleges</Link>
+              <Link className="font-semibold mr-4 hidden lg:block" to="/admission">Admission</Link>
             <Link to="/login">
               <button className="btn button-sm btn-sm border-1 border-gold hover:border-blue mr-3 ">LogIn</button>
             </Link>
