@@ -60,7 +60,7 @@ const Navbar = () => {
                 {user.displayName}
               </Link>
                 <br />
-                <button onClick={handleLogOut} className="btn btn-sm button-sm border-none mt-4">
+                <button onClick={handleLogOut} className="bg-blue text-gold pt-2 pb-2 pl-3 pr-3 rounded-lg hover:bg-gold shadow-md  hover:text-blue text-xs hover:border-blue border-b-2">
                   Log Out
                 </button>
               </div>
@@ -81,7 +81,7 @@ const Navbar = () => {
               <Link className="font-semibold mr-4" to="/userProfile">
                 {user.displayName}
               </Link>
-              <button onClick={handleLogOut} className="btn btn-sm button-sm border-none">Log Out</button>
+              <button onClick={handleLogOut} className="bg-blue text-gold pt-2 pb-2 pl-3 pr-3 rounded-lg hover:bg-gold shadow-md  hover:text-blue text-xs hover:border-blue border-b-2">Log Out</button>
             </div>
             <div className="dropdown dropdown-end flex">
               <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
