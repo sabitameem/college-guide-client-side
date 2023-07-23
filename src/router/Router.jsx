@@ -8,6 +8,8 @@ import Colleges from "../Pages/Colleges/Colleges";
 import Admission from "../Pages/Admission/Admission";
 import MyCollege from "../Pages/MyCollege/MyCollege";
 import UserProfile from "../Pages/userProfile/UserProfile";
+import CollegeDetails from "../Pages/collegeDetails/CollegeDetails";
+
 
 export const router = createBrowserRouter([
     {
@@ -43,6 +45,11 @@ export const router = createBrowserRouter([
           path: '/userProfile',
           element: <UserProfile></UserProfile>
         },
+        {
+          path: '/collegeDetails/:id',
+          element: <CollegeDetails></CollegeDetails>,
+          loader: ({params})=> fetch(`http://localhost:5000/collegedata/${params.id}`)
+        }
     ]
     },
   ]);

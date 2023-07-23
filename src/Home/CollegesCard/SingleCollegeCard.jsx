@@ -1,5 +1,8 @@
+import { Link } from "react-router-dom";
+
 const SingleCollegeCard = ({ singleCollegeData }) => {
   const {
+    _id,
     college_name,
     image,
     graduation_image,
@@ -47,7 +50,7 @@ const SingleCollegeCard = ({ singleCollegeData }) => {
         </div>
         <p className="text-xs lg:text-base md:text-sm"><span className="font-semibold text-blue">Research History :</span> {research_history}</p>
         <div className="card-actions ms-auto">
-          <button className="button-sm">Details</button>
+        <Link to={`collegeDetails/${_id}`}><button className="button-sm">Details</button></Link>
         </div>
       </div>
     </div>
