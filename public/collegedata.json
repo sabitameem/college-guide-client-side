@@ -7,7 +7,7 @@
         "admission_process": "Admissions at Harvard are highly competitive and based on academic excellence, extracurricular achievements, and recommendation letters.",
         "research_history": "Harvard University has a long and prestigious research history, being involved in groundbreaking studies across various disciplines.",
         "number_of_research": 3000,
-        "research_work": "Extensive research across multiple disciplines",
+        "research_work": "Harvard University is a prestigious and renowned research institution located in Cambridge, Massachusetts, USA. Founded in 1636, it is one of the oldest universities in the United States. Harvard is known for its extensive research contributions across various disciplines, including medicine, law, business, engineering, social sciences, and more. The university's research endeavors have led to significant advancements and innovations, impacting society on a global scale. Harvard's commitment to academic excellence and its vast network of scholars and facilities make it a prominent leader in the world of research and education.",
         "events": [
           {
             "event_name": "Harvard Yard Festival",
@@ -52,7 +52,7 @@
         "admission_process": "Stanford's admission process considers academic achievements, extracurricular involvement, standardized test scores, and essays.",
         "research_history": "Stanford University has a rich research history, known for its contributions to technology, medicine, and social sciences.",
         "number_of_research": 2500,
-        "research_work": "Leading research in technology and innovation",
+        "research_work": "Stanford University is a prestigious private research university situated in Stanford, California, USA. Established in 1885, it is renowned for its cutting-edge research, academic excellence, and innovation. Stanford is home to top-ranked programs in various fields, including computer science, engineering, business, medicine, social sciences, and humanities.The university has played a pivotal role in advancing technology and entrepreneurship, with numerous successful startups originating from its campus and surrounding Silicon Valley. Stanford's interdisciplinary approach to research and its state-of-the-art facilities have led to significant breakthroughs in various scientific, technological, and societal areas.Stanford University consistently ranks among the world's top universities and continues to attract top scholars, researchers, and students from around the globe. Its commitment to fostering a culture of exploration, creativity, and academic excellence has solidified its position as a leading institution in the field of research and higher education.",
         "events": [
           {
             "event_name": "Innovation Summit",
@@ -97,7 +97,7 @@
         "admission_process": "MIT looks for students with exceptional academic records, passion for learning, and a strong aptitude for math and science.",
         "research_history": "MIT has a pioneering research history, leading in fields such as engineering, computer science, and robotics.",
         "number_of_research": 2800,
-        "research_work": "Pioneering research in science and engineering",
+        "research_work": "Massachusetts Institute of Technology (MIT) is a prestigious research university known for its cutting-edge innovation and excellence in education. Located in Cambridge, Massachusetts, USA, MIT is a global leader in science, engineering, and technology, driving significant advancements and discoveries across various fields.",
         "events": [
           {
             "event_name": "TechExpo",
@@ -142,7 +142,7 @@
         "admission_process": "Yale's admission process emphasizes academic achievements, extracurricular involvement, essays, and teacher recommendations.",
         "research_history": "Yale University has a storied research history, contributing significantly to literature, humanities, and social sciences.",
         "number_of_research": 2600,
-        "research_work": "Diverse research programs across liberal arts and sciences",
+        "research_work": "Yale University is a renowned Ivy League research university located in New Haven, Connecticut, USA. Founded in 1701, it is one of the oldest universities in the United States. Yale is known for its distinguished faculty, rigorous academic programs, and contributions to various disciplines, including arts, humanities, social sciences, law, medicine, and sciences. The university's emphasis on critical thinking, research, and global engagement has established it as a prominent institution in the world of higher education.",
         "events": [
           {
             "event_name": "Yale Spring Fling",
@@ -187,7 +187,7 @@
         "admission_process": "Caltech seeks students with exceptional aptitude in science and engineering and evaluates applications holistically.",
         "research_history": "Caltech has a strong research history, particularly in physics, astronomy, and earth sciences.",
         "number_of_research": 1800,
-        "research_work": "Focused research in science and engineering",
+        "research_work": "The California Institute of Technology (Caltech) is a prestigious private research university situated in Pasadena, California, USA. Established in 1891, Caltech is renowned for its emphasis on science and engineering disciplines. The university has a strong reputation for cutting-edge research, particularly in areas such as physics, astronomy, chemistry, biology, computer science, and engineering. Caltech's small size and collaborative environment foster close interactions between students and faculty, contributing to its reputation as a world-leading institution in scientific research and education.",
         "events": [
           {
             "event_name": "Tech Symposium",
@@ -232,7 +232,7 @@
         "admission_process": "Princeton's admission process considers academic achievements, extracurricular activities, essays, and teacher recommendations.",
         "research_history": "Princeton University has a distinguished research history, contributing significantly to social sciences, engineering, and humanities.",
         "number_of_research": 2700,
-        "research_work": "Prominent research programs in various disciplines",
+        "research_work": "Princeton University is a prestigious Ivy League research university located in Princeton, New Jersey, USA. Founded in 1746, it is one of the oldest universities in the country. Princeton is renowned for its rigorous academic programs, distinguished faculty, and contributions to various fields, including humanities, social sciences, engineering, natural sciences, and public policy. The university's commitment to academic excellence and its historic campus make it a highly esteemed institution in the world of higher education.",
         "events": [
           {
             "event_name": "Art and Music Festival",
@@ -277,7 +277,7 @@
         "admission_process": "Admission to Cambridge is highly competitive and varies by course. It involves interviews, aptitude tests, and academic records.",
         "research_history": "It is one of the oldest and most prestigious universities in the world, known for its outstanding contributions to knowledge and innovation. Throughout its history, Cambridge has been at the forefront of groundbreaking research across a wide range of disciplines, from sciences and humanities to technology and social sciences.",
         "number_of_research": 3200,
-        "research_work": "World-class research spanning diverse disciplines",
+        "research_work": "The University of Cambridge is a prestigious and historic research university located in Cambridge, England. Established in 1209, it is one of the oldest universities in the world. Cambridge is known for its academic excellence, distinguished faculty, and extensive contributions to various disciplines, including science, humanities, social sciences, engineering, and medicine. The university's rich history, stunning architecture, and global reputation for research and education make it a leading institution in the field of higher learning.",
         "events": [
           {
             "event_name": "May Ball",
