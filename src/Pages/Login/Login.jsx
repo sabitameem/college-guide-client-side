@@ -62,7 +62,7 @@ const Login = () => {
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="text-center lg:text-left">
             <img
-              className="lg:w-[470px] w-36 mb-12 lg:ml-20"
+              className="lg:w-[400px] w-36 mb-12 lg:ml-20"
               src={login}
               alt=""
             />
