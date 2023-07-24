@@ -56,7 +56,7 @@ const Admission = () => {
         console.log("Server response:", data);
         Swal.fire(
             'Good job!',
-            'You clicked the button!',
+            'You select the college!',
             'success'
           )
           navigate('/')
