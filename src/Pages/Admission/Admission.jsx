@@ -152,7 +152,7 @@ const Admission = () => {
           
           <ul>
             {collegeCard.map((college) => (
-              <li className="text-xl text-blue cursor-pointer" key={college._id} onClick={() => handleCollegeClick(college)}>
+              <li className="text-xl text-blue cursor-pointer mb-3" key={college._id} onClick={() => handleCollegeClick(college)}>
                 {college.college_name}
               </li>
             ))}

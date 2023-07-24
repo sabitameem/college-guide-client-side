@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 import { Helmet } from "react-helmet";
 
@@ -21,6 +21,7 @@ useEffect(() => {
     <div>
       <Helmet><title>My College | College Guide</title></Helmet>
       <h3>Selected College: {selectedCollege.length}</h3>
+      {/* <img src={selectedCollege.image} alt="" /> */}
       {/* You can display the selected college data here */}
     </div>
   );
