@@ -6,6 +6,10 @@ import { Helmet } from "react-helmet";
 const Colleges = () => {
   const [collegeCard, setCollegeCard] = useState([]);
   useEffect(() => {
+
+
+    //fetch("http://localhost:5000/collegedata")
+
     fetch("https://college-guide-server.vercel.app/collegedata")
       .then((res) => res.json())
       .then((data) => {

@@ -84,7 +84,7 @@ const SignUp = () => {
               <h1 className="my-3 text-blue text-4xl font-bold">Sign Up</h1>
               <p className="text-sm text-gray-400">Welcome to College Guide!</p>
             </div>
-            <form onSubmit={handleSubmit} className="card-body text-blue">
+            <form onSubmit={handleSubmit} className="text-blue mr-13">
               <div className="space-y-4">
                 <div>
                   <label htmlFor="name" className="block mb-2 text-sm">
@@ -95,7 +95,7 @@ const SignUp = () => {
                     name="name"
                     id="name"
                     placeholder="Enter Your Name Here"
-                    className="w-full px-3 py-2 border rounded-md border-gray-300 focus:outline-blue bg-gray-200 text-gray-900"
+                    className="w-[250px]  px-3 py-2 border rounded-md border-gray-300 focus:outline-blue bg-gray-200 text-gray-900"
                     data-temp-mail-org="0"
                   />
                 </div>
@@ -121,7 +121,7 @@ const SignUp = () => {
                     id="email"
                     required
                     placeholder="Enter Your Email Here"
-                    className="w-full px-3 py-2 border rounded-md border-gray-300 focus:outline-blue bg-gray-200 text-gray-900"
+                    className="w-[250px]  px-3 py-2 border rounded-md border-gray-300 focus:outline-blue bg-gray-200 text-gray-900"
                     data-temp-mail-org="0"
                   />
                 </div>
@@ -137,12 +137,12 @@ const SignUp = () => {
                     id="password"
                     required
                     placeholder="*******"
-                    className="w-full px-3 py-2 border rounded-md border-gray-300 focus:outline-blue bg-gray-200 text-gray-900"
+                    className="w-[250px]  px-3 py-2 border rounded-md border-gray-300 focus:outline-blue bg-gray-200 text-gray-900"
                   />
                 </div>
               </div>
               <div className="form-control mt-6 mb-0">
-                <button className="button-lg">Login</button>
+                <button className="button-sm w-[250px] mb-10">Login</button>
               </div>
             </form>
             <div>

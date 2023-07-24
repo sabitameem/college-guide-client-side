@@ -15,6 +15,7 @@ const Home = () => {
             <Gallery></Gallery>
             <ResearchPaper></ResearchPaper>
             <Review></Review>
+            
         </div>
     );
 };
