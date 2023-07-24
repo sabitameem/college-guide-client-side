@@ -45,7 +45,7 @@ const MyCollege = () => {
       rating: rating,
     };
     console.log(reviewData)
-    fetch("http://localhost:5000/review", {
+    fetch("https://college-guide-server.vercel.app/review", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
