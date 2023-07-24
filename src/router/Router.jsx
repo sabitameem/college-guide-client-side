@@ -10,6 +10,7 @@ import MyCollege from "../Pages/MyCollege/MyCollege";
 import UserProfile from "../Pages/userProfile/UserProfile";
 import CollegeDetails from "../Pages/collegeDetails/CollegeDetails";
 import PrivateRoute from "./PrivateRoute";
+import JohnDoe from "../Pages/JohnDoe/JohnDoe";
 
 
 export const router = createBrowserRouter([
@@ -49,7 +50,12 @@ export const router = createBrowserRouter([
         {
           path: '/collegeDetails/:id',
           element:<PrivateRoute><CollegeDetails></CollegeDetails></PrivateRoute> ,
-          loader: ({params})=> fetch(`http://localhost:5000/collegedata/${params.id}`)
+          //loader: ({params})=> fetch(`http://localhost:5000/collegedata/${params.id}`)
+          loader: ({params})=> fetch(`https://college-guide-server.vercel.app/collegedata/${params.id}`)
+        },
+        {
+          path: '/johnDoe',
+          element:<JohnDoe></JohnDoe>
         }
     ]
     },

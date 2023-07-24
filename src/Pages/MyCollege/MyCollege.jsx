@@ -3,24 +3,54 @@ import { AuthContext } from "../../providers/AuthProvider";
 import { Helmet } from "react-helmet";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
+import SingleCollege from "./SingleCollege";
 
 const MyCollege = () => {
-  //const [selectedCollege, setSelectedCollege] = useState([]);
+  const [selectedCollege, setSelectedCollege] = useState([]);
   const { user } = useContext(AuthContext);
   const [reviewText, setReviewText] = useState("");
-  const [collegeName,setCollegeName]=useState("")
+  const [collegeName, setCollegeName] = useState("");
   const [rating, setRating] = useState(0);
   const navigate = useNavigate();
- 
 
+
+  useEffect(() => {
+    //const url = `http://localhost:5000/submit?email=${user?.email}`;
+    const url = `https://college-guide-server.vercel.app/submit?email=${user?.email}`;
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => setSelectedCollege(data));
+  }, [user?.email]);
+
+  // const url = `http://localhost:5000/submit?email=${user?.email}`;
   // useEffect(() => {
-  //   fetch(`http://localhost:5000/submit?email=${user.email}`)
+  //   fetch(url)
+  //     .then((res) => res.json())
+  //     .then((data) => setSelectedCollege(data));
+  // }, []);
+
+  // fetch("http://localhost:5000/submit", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSON.stringify(candidateData),
+  //   })
   //     .then((res) => res.json())
   //     .then((data) => {
-  //       console.log(data);
-  //       setSelectedCollege(data);
+  //       console.log("Server response:", data);
+  //       Swal.fire(
+  //           'Good job!',
+  //           'You select the college!',
+  //           'success'
+  //         )
+  //         navigate('/')
+  //       // You can handle the server response here, e.g., show a success message
+  //     })
+  //     .catch((error) => {
+  //       console.error("Error submitting data:", error);
+  //       // Handle the error here, e.g., show an error message
   //     });
-  // }, []);
 
   const handleReviewSubmit = () => {
     if (!rating) {
@@ -40,12 +70,13 @@ const MyCollege = () => {
     }
     const reviewData = {
       name: user.displayName,
-      collegeName: collegeName, 
+      collegeName: collegeName,
       reviewText: reviewText,
       rating: rating,
     };
-    console.log(reviewData)
-    fetch("http://localhost:5000/review", {
+    console.log(reviewData);
+    //fetch("http://localhost:5000/review", {
+    fetch("https://college-guide-server.vercel.app/review", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -55,12 +86,8 @@ const MyCollege = () => {
       .then((res) => res.json())
       .then((data) => {
         console.log("Server response:", data);
-        Swal.fire(
-            'Good job!',
-            'You added a review!',
-            'success'
-          )
-          navigate('/')
+        Swal.fire("Good job!", "You added a review!", "success");
+        navigate("/");
         // You can handle the server response here, e.g., show a success message
       })
       .catch((error) => {
@@ -68,52 +95,63 @@ const MyCollege = () => {
         // Handle the error here, e.g., show an error message
       });
   };
+  console.log(selectedCollege)
 
   return (
-    <div>
+    <div className=" justify-around">
       <Helmet>
         <title>My College | College Guide</title>
       </Helmet>
-      {/* <h3>Selected College: {selectedCollege.length}</h3> */}
-      {/* <img src={selectedCollege.image} alt="" /> */}
-      {/* You can display the selected college data here */}
+    
+
+      {selectedCollege.length > 0 ? (
+        <div className="text-center mb-12">
+          {selectedCollege.map((singleCollege, index) => (
+            <SingleCollege key={index} singleCollege={singleCollege} />
+          ))}
+        </div>
+      ) : (
+        <p className="text-2xl text-gold  m-12">No colleges submitted by the user.</p>
+      )}
 
       {/* review field */}
-      <div className="ms-4">
-        <h4 className="text-2xl font-semibold text-blue my-5">Add Your Review:</h4>
+      <div className="ms-4 text-center ">
+        <h4 className="text-2xl mt-7 font-semibold text-blue my-5">
+          Add Your Review:
+        </h4>
         <div>
-          <label htmlFor="name" className="block mb-2 text-sm">
+          {/* <label htmlFor="name" className="block mb-2 text-sm">
             Name
-          </label>
+          </label> */}
           <input
-          type="text"
-          name="name"
-          id="name"
-          value={user.displayName}
-          placeholder="Enter Your Name Here"
-          className="px-3 py-2 border rounded-md border-gray-300 focus:outline-blue bg-gray-200 text-gray-900 w-[411px]"
-          data-temp-mail-org="0"
+            type="text"
+            name="name"
+            id="name"
+            value={user?.displayName}
+            placeholder="Enter Your Name Here"
+            className="px-3 py-2 border rounded-md border-gray-300 focus:outline-blue bg-gray-200 text-gray-900 w-[250px] lg:w-[411px] mb-4"
+            data-temp-mail-org="0"
           />
         </div>
 
         <div>
-          <label htmlFor="collegeName" className="block mb-2 mt-2 text-sm">
+          {/* <label htmlFor="collegeName" className="block mb-2 mt-2 text-sm">
             College Name
-          </label>
+          </label> */}
           <input
-          type="text"
-          name="collegeName"
-          value={collegeName}
-          onChange={(e)=>setCollegeName(e.target.value)}
-          id="collegeName"
-          placeholder="Enter Your College Name Here"
-          className="px-3 py-2 border rounded-md border-gray-300 focus:outline-blue bg-gray-200 text-gray-900 w-[411px]"
-          data-temp-mail-org="0"
-          required
+            type="text"
+            name="collegeName"
+            value={collegeName}
+            onChange={(e) => setCollegeName(e.target.value)}
+            id="collegeName"
+            placeholder="Enter Your College Name Here"
+            className="px-3 py-2 border rounded-md border-gray-300 focus:outline-blue bg-gray-200 text-gray-900 w-[250px] lg:w-[411px]"
+            data-temp-mail-org="0"
+            required
           />
         </div>
         <textarea
-          className="border px-3 py-2 my-4 rounded-md border-gray-300 focus:outline-blue bg-gray-200"
+          className="border px-3 py-2 my-4 rounded-md border-gray-300 focus:outline-blue bg-gray-200 w-[250px] lg:w-[411px]"
           rows="4"
           cols="50"
           value={reviewText}

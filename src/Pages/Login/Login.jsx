@@ -90,7 +90,7 @@ const Login = () => {
                     id="email"
                     required
                     placeholder="Enter Your Email Here"
-                    className="w-full px-3 py-2 border rounded-md border-gray-300 focus:outline-blue bg-gray-200 text-gray-900"
+                    className="w-[200px] lg:w-[250px] px-3 py-2 border rounded-md border-gray-300 focus:outline-blue bg-gray-200 text-gray-900"
                     data-temp-mail-org="0"
                   />
                   
@@ -107,7 +107,7 @@ const Login = () => {
                     id="password"
                     required
                     placeholder="*******"
-                    className="w-full px-3 py-2 border rounded-md border-gray-300 focus:outline-blue bg-gray-200 text-gray-900"
+                    className="w-[200px] lg:w-[250px] px-3 py-2 border rounded-md border-gray-300 focus:outline-blue bg-gray-200 text-gray-900"
                   />
                 </div>
                 <div>
@@ -120,7 +120,7 @@ const Login = () => {
                   </div>
               </div>
               <div className="form-control mt-6 mb-0">
-                <button className="button-lg">Login</button>
+                <button className="button-sm w-[200px] lg:w-[250px]">Login</button>
               </div>
             </form>
             <div>
